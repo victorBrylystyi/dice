@@ -1,0 +1,8 @@
+[
+    {
+        "type": "3DModel",
+        "name": "dice",
+        "path": "./assets/gltf/",
+        "url": "dice.glb"
+    }
+]
