@@ -1,12 +1,17 @@
 
 import { useBox } from "@react-three/cannon";
+import { useMemo } from "react";
 import * as THREE from 'three';
 
 export default function PhysDice({model,vec,color,...props}) {
 
-    const [ref, api] = useBox(() => ({ ...props })); 
+    const [ref, api] = useBox(() => ({ ...props }));
 
-    model.mainBox.material.color.copy(new THREE.Color(color));
+    const cloneMaterial = useMemo(()=>{
+        const material = model?.mainBox?.material.clone();
+        material?.color.copy(new THREE.Color(color));
+        return material;
+    },[model]);
 
     return ( 
         <group 
@@ -16,7 +21,7 @@ export default function PhysDice({model,vec,color,...props}) {
             onClick={() => api.applyImpulse([10*vec.x, 10*vec.y, -10*vec.z], [0, 0, 0]) }>
             <mesh 
                 geometry={model.mainBox.geometry} 
-                material={model.mainBox.material.clone()} 
+                material={cloneMaterial} 
             />
             <mesh 
                 geometry={model.perforatedBox.geometry} 

@@ -1,4 +1,4 @@
-/* eslint-disable no-process-env */
+
 let path = require( 'path' );
 let express = require( 'express' );
 

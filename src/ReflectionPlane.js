@@ -9,18 +9,18 @@ export default function ReflectionPlane({roughnessMap, normalMap, dim, ...props}
         <Reflector
             ref = {ref}
             args={dim} // PlaneBufferGeometry arguments
-            blur={[300, 120]} // Blur ground reflections (width, heigt), 0 skips blur
-            mirror={0.9} // Mirror environment, 0 = texture colors, 1 = pick up env colors
-            mixBlur={6} // How much blur mixes with surface roughness
-            mixStrength={0.25} // Strength of the reflections
-            resolution={512} // Off-buffer resolution, lower=faster, higher=better quality
+            blur={[512, 512]} // Blur ground reflections (width, heigt), 0 skips blur
+            mirror={1} // Mirror environment, 0 = texture colors, 1 = pick up env colors
+            mixBlur={8} // How much blur mixes with surface roughness
+            mixStrength={1} // Strength of the reflections
+            resolution={1024} // Off-buffer resolution, lower=faster, higher=better quality
             minDepthThreshold={0.25}
             maxDepthThreshold={1}
             depthScale={50}
-            depthToBlurRatioBias={0.1}
+            depthToBlurRatioBias={1}
         >
             {(Material, props) => (
-                <Material color="#f0f0f0" metalness={0} roughnessMap={roughnessMap} normalMap={normalMap} normalScale={[0.6, 0.6]} {...props}/>
+                <Material color="#f0f0f0" metalness={0} roughnessMap={roughnessMap} normalMap={normalMap} normalScale={[1, 1]} {...props}/>
             )}
         </Reflector>
     );
