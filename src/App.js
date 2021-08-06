@@ -60,7 +60,6 @@ export default function App() {
     <Canvas dpr={[1, 1.5]} camera={{ position: [0, 2, 5] }}>
       <color attach="background" args={"black"} />
       <ambientLight intensity={0.6} />
-      <spotLight intensity={0.6} position={[0, 40, 0]} angle={0.2} penumbra={1}/>
       <OrbitControls />
       {/* <CameraShake yawFrequency={0.1} pitchFrequency={0.2} rollFrequency={0.2} /> */}
       <Suspense fallback={null}>

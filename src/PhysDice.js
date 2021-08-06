@@ -9,7 +9,9 @@ export default function PhysDice({model,vec,color,...props}) {
 
     const cloneMaterial = useMemo(()=>{
         const material = model?.mainBox?.material.clone();
+        material.roughness = 0.1;
         material?.color.copy(new THREE.Color(color));
+
         return material;
     },[model]);
 
