@@ -9,7 +9,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "git": "git add . && git commit -m 'fix' && git push -u origin main"
+    "git": "git add . && git commit -m 'readme' && git push -u origin main"
   },
   "engines": {
     "node": "14.15.5",
@@ -24,7 +24,6 @@
     "@react-three/fiber": "^7.0.4",
     "@react-three/postprocessing": "^2.0.4-alpha.2",
     "express": "^4.17.1",
-    "leva": "^0.9.13",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "^4.0.3",
