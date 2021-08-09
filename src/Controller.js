@@ -61,6 +61,4 @@ export default function useController(props) {
 
       }    
   }, [newColor]);
-
-  return null;
 }

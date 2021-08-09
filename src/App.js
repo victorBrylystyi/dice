@@ -21,7 +21,7 @@ useTexture.preload(['/assets/ground/ground.jpeg', '/assets/ground/ground_normal.
 function Scene (){
 
   const node = useMemo(()=>{
- 
+  
     const { nodes } = useGLTF('/assets/gltf/dice.glb');
 
     return nodes;

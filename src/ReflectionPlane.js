@@ -1,5 +1,6 @@
 import { usePlane } from "@react-three/cannon";
 import { Reflector } from '@react-three/drei';
+import * as THREE from 'three';
 
 export default function ReflectionPlane({roughnessMap, normalMap, dim, ...props}){
 
