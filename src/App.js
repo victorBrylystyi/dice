@@ -67,7 +67,7 @@ export default function App() {
           <Scene />
         </Physics>
         <EffectComposer multisampling={8}>
-          <Bloom luminanceThreshold={0} luminanceSmoothing={0.1} intensity={2} width={1024} height={1024} kernelSize={3} blurPass={undefined}/> 
+          <Bloom luminanceThreshold={0} luminanceSmoothing={0.1} intensity={2} width={1024} height={1024} kernelSize={3} /> 
         </EffectComposer>
       </Suspense>
     </Canvas>
