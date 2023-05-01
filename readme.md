@@ -13,7 +13,7 @@ Simulation of dice rolls on a glass floor and using bloom post-processing effect
  <img  src="/gif/dices.gif"  width="80%"  height="80%">
  </p>
 <h2  align="center">
-	<a  href="https://dice-react-app.herokuapp.com/">DEMO</a>
+	<a  href="https://dices-visual.netlify.app/">DEMO</a>
 </h2>
 
 # Usage 
